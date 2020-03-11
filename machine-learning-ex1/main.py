@@ -13,7 +13,7 @@ if __name__ == '__main__':
     x = np.mat(data[:,0])
     y = np.mat(data[:,1])
     print('Start train model linear regression with variable')
-    linear.train(x, y, 1000)
+    linear.train(x, y, 1000,  lr=0.01)
     print('End train model linear regireesion with one variable')
     x_list = x.tolist()[0]
     x_list.sort()
